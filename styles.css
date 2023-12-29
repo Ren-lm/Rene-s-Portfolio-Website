@@ -1,5 +1,6 @@
 body {
     margin: 0px;
+    padding: 0px;
     text-align: center;
     font-family: verdana, sans-serif;
     color: rgb(104, 103, 103);
@@ -258,7 +259,7 @@ hr {
     margin-right: 50px;
     width: 85%;
     height: 1200px;
-    padding-top: 100px;
+     padding-top: 100px; 
     border-radius: 50px;
     overflow: auto;
   
@@ -472,8 +473,8 @@ hr {
     background-color: rgba(245, 245, 245, 0.707);
     width: 90%;
     height: auto;
-    padding-bottom: 10%;
-    margin-top:200px;
+    margin-top:150px;
+    margin-bottom: 150px;
     border-radius: 50px;
   }
   
@@ -507,17 +508,56 @@ hr {
   animation-iteration-count: infinite;
 }
 
-/* Controls transition of colours for titlebar on pages that contain a title bar */
-@keyframes colour-change {
-  0% {
-    background-color: rgb(192, 186, 107);
-  }
 
-  25% {
-    background-color: #7cf1b7c5;
-  }
+/* contact form styles */
 
-  50% {
-    background-color: rgba(128, 190, 209, 0.836);
-  }
+.form-group {
+  margin-bottom: 20px;
+}
+
+
+.form-group input,
+.form-group textarea {
+  width: 60%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  border: 2px solid #ff99cc; /* Example border: 2px solid with a light pink color */
+
+}
+
+.form-group textarea {
+  height: 200px;
+}
+
+.contactme{
+  margin-top: 350px;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto 30px; /* Center the image */
+  margin-top: 150px;
+  display: block;
+  object-fit: cover;
+}
+
+.skills-list {
+  list-style-type: none; /* Removes bullet points */
+  padding: 0; /* Resets padding */
+  display: inline-block;
+  text-align: left; /* Aligns text to the left */
+  
+}
+
+.skills-list li {
+  color: #6a6a6a;
+  background: white;
+  padding: 10px;
+  margin-bottom: 10px; /* Space between list items */
+ width: 100%;;
+  border-radius: 5px; /* Rounded corners */
+  border: 2px solid #ff99cc; /* Example border: 2px solid with a light pink color */
 }
