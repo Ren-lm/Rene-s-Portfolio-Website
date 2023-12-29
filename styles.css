@@ -1,0 +1,523 @@
+body {
+    margin: 0px;
+    text-align: center;
+    font-family: verdana, sans-serif;
+    color: rgb(104, 103, 103);
+    background-image: url('Purpleill.jpg')!important;
+    min-height: 100px;
+    overflow: visible;
+
+
+}
+
+
+.title1{
+    color: white;
+}
+
+/* Navigation bar code */
+/* Mobile Nav Bar */
+/* This code was adobpted and combined with another navbar I had previously coded for my themepark midterm website to create
+a responsive design */
+
+* {
+    box-sizing: border-box;
+  }
+
+
+  .navlabel{
+    font-size: 30px;
+    font-family: "montserrat";
+    padding-left:20px;
+    bottom: 12px;
+    position:absolute;
+    color: #fbaccc;
+
+}
+
+.navlabel:hover{
+    scale: 25px;
+    transition: 0.5s;
+    transform: scale(1.15);
+    color: rgb(236, 171, 252);
+}
+
+  .mobnav-h2 {
+    position: relative;
+    font-size: 12px;
+    font-family: "montserrat";
+    top: -0.7rem;
+  }
+  
+  .mobnav-h1 {
+    position: relative;
+    font-size: 20px;
+    top: -1.7rem;
+    color: #fbaccc;
+  }
+  
+  .nav-title {
+    height: 0px;
+  }
+  
+  .nav {
+    height: 60px;
+    width: 100%;
+    background-color: rgba(80, 82, 82, 0.762);
+    position:fixed;
+    margin-bottom: 5px;
+    z-index: 1;
+  }
+  
+  .nav .nav-header {
+    display: inline;
+  }
+  
+  .nav .nav-header .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: whitesmoke;
+    padding: 10px 10px 10px 10px;
+  }
+  
+  .nav .nav-btn {
+    display: none;
+  }
+ 
+  .nav .nav-links {
+    display: inline;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .nav .nav-links a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #efefef;
+  }
+  
+  .nav .nav-links a:hover {
+    background-color:#fbaccc;
+    scale: 10px;
+    transition: 0.5s;
+    transform: scale(1.15);
+
+  }
+  
+  .nav #nav-check {
+    display: none;
+  }
+  
+   @media (max-width: 2250px) {
+    .nav .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+  
+    .nav .nav-btn label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px; 
+    }
+  
+    .nav .nav-btn label:hover,
+    .nav #nav-check:checked ~ .nav-btn label {
+      background-color: #fbaccc;
+    }
+  
+    .nav .nav-btn label span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+  
+    .nav .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: rgba(2, 2, 2, 0.891);
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+      z-index: 1;
+    }
+  
+    .nav .nav-links a {
+      display: block;
+      width: 100%;
+    }
+  
+    .nav #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+  
+    .nav #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  }
+  
+  .nav a.active {
+
+  color: #fbaccc;
+  }
+  .nav a.active:hover {
+
+    color: white;
+    }
+  /* Mobile navigation bar styling ends */
+  
+
+
+
+h1 {
+    margin: 50px auto 0 auto;
+    font-family: 'Sacramento', cursive;
+    font-size: 6.625rem;
+   color:#f385c7;
+
+
+
+}
+
+
+h2 {
+    line-height: 300%;
+    font-family: 'Montserrat', sans-serif;
+    font: size 3.5rem;
+    font-weight: normal;
+    color:#f393cd;
+}
+
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #11999E;
+
+}
+
+p{
+    margin: 10px auto 100px auto;
+
+  
+}
+
+a{
+    color:#fbaccc;
+    font-family: 'Montserrat', sans-serif;
+    margin:10px 20px;
+    text-decoration: none; 
+
+}
+
+a:hover{
+    color: #fff2f7;
+}
+
+.copyright{
+    color: #ffffff;
+    font-size: 0.85rem;
+    padding: 20px 0;
+}
+
+
+hr {
+    border-style: none;
+    border-top: dotted;
+    border-color:#ffe8e8;
+    border-width: 5px;
+    width: 5%;
+    margin:100px auto ;
+}
+
+
+.first-container{
+    display: block;
+   /* background-color:pink; */
+    height: 500px;
+    margin-left: 50px;
+    margin-right: 50px;
+    overflow: auto;
+
+}
+
+.top-container {
+    justify-content: center;
+    background-color: #fbd9d942;
+    position: relative;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 50px;
+    width: 85%;
+    height: 1200px;
+    padding-top: 100px;
+    border-radius: 50px;
+    overflow: auto;
+  
+    
+}
+
+.middle-container { 
+    margin: 100px 0;
+    overflow: auto;
+    background-color: rgba(255, 255, 255, 0.771);
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 50px;
+    width: 85%;
+    height: 1200px;
+    border-radius: 50px;
+    overflow: auto;
+
+}
+
+
+.bottom-container {
+    background-color:#fddbdb ;
+    padding: 70px 0 10px;
+    overflow: auto;
+
+
+
+}
+
+.intro{
+    width:30%;
+    text-align: center;
+}
+
+.top-cloud {
+    position: absolute;
+    width: 15%;
+    right: 140px;
+    top: 100px;
+}
+
+.bottom-cloud {
+    position: absolute;
+    width: 15%;
+    left: 60px;
+    top:350px;
+
+
+}
+.top-programmer {
+    position: static;
+    padding: 70px 0;
+
+}
+
+
+.skills{
+    margin:200px auto 200px auto;
+
+
+}
+
+.skill-row{
+    margin:150px auto 200px auto;
+
+    width:50%;
+    text-align: left;
+    line-height: 2;
+}
+
+
+.presentation-3 {
+    margin-right: 30px;
+    width: 25%;
+    float: left;
+}
+
+.coding-class{
+   width: 25%;
+   float: right;
+
+} 
+
+.contact-message{
+    width:100%;
+    margin: 40px auto 60px;
+
+}
+
+.contact-me{
+    margin:100px auto 100px auto;
+    line-height: 0.5;
+
+}
+
+.contact-me-row{
+    margin:150px auto 100px auto;
+    width:50%;
+    text-align: left;
+    line-height: 2;
+}
+
+.workspace-img{
+    margin-left: 50px;
+    width: 40%;
+    float:right;
+
+}
+
+.mailto-row{
+    margin:300px auto 100px auto;
+    width:50%;
+    text-align:center;
+    line-height: 2;
+}
+
+.renren-img{
+    width: 30%;
+}
+.top-programmer{
+    margin:-100px auto 100px auto;
+    width:70%;
+
+}
+
+.btn {
+    background: #e887b1;
+    background-image: -webkit-linear-gradient(top, #e887b1, #fcb0d0);
+    background-image: -moz-linear-gradient(top, #e887b1, #fcb0d0);
+    background-image: -ms-linear-gradient(top, #e887b1, #fcb0d0);
+    background-image: -o-linear-gradient(top, #e887b1, #fcb0d0);
+    background-image: linear-gradient(to bottom, #e887b1, #fcb0d0);
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    color: #f8eaea;
+    font-size: 90%;
+    padding: 10px 15px 10px 15px;
+    text-decoration:none;
+  }
+  
+  .btn:hover {
+    background: #f26fa6;
+    background-image: -webkit-linear-gradient(top, #f26fa6, #eb90b6);
+    background-image: -moz-linear-gradient(top, #f26fa6, #eb90b6);
+    background-image: -ms-linear-gradient(top, #f26fa6, #eb90b6);
+    background-image: -o-linear-gradient(top, #f26fa6, #eb90b6);
+    background-image: linear-gradient(to bottom, #f26fa6, #eb90b6);
+    text-decoration: none;
+  }
+
+
+
+/* --projects page  styling----- */
+
+.section_title {
+    margin-top: 2.5em;
+    margin-bottom: 1.5em;
+    font-size: 50px;
+}
+  
+  .article_item {
+    margin: 0.5em; 
+  } 
+  
+  .article_item h4 {
+    text-align: center;
+    /* font-family: "montserrat"; */
+    font-family: sans-serif;
+    font-size: 14px;
+    color: rgb(36, 35, 35);
+  }
+  
+  .article_item_img_container {
+    max-height: 250px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 1.5em;
+  }
+  
+  .article_img {
+    width: 250px;
+    height: 150px;
+    transition: transform 0.5s;
+    border-radius: 10px;
+  }
+
+  .mobile_img {
+    width: 250px;
+    height: 550px;
+    transition: transform 0.5s;
+    border-radius: 10px;
+  }
+
+  .article_item:hover .mobile_img {
+    transform: scale(1.05);
+  }
+  
+  .article_item:hover .article_img {
+    transform: scale(1.05);
+  }
+  
+  .articles {
+    display: inline-block;
+    text-align: center;
+    background-color: rgba(245, 245, 245, 0.707);
+    width: 90%;
+    height: auto;
+    padding-bottom: 10%;
+    margin-top:200px;
+    border-radius: 50px;
+  }
+  
+   .article {
+    margin: 1em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  } 
+
+  
+
+  
+  /* On large screens keep the numer of images to maximum of 4 per row */
+  @media (min-width: 1400px) {
+    .article {
+      grid-template-columns: repeat(3, minmax(300px, 1fr));
+    }
+  }
+
+.titlebar{
+  height:400px;
+  display: inline-block; 
+  margin-top:100px;
+  margin-left:50px;
+  margin-right:50px;
+  width: 85%;
+  border-radius: 50px;
+  background: rgb(192, 186, 107);
+  animation-name: colour-change;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+}
+
+/* Controls transition of colours for titlebar on pages that contain a title bar */
+@keyframes colour-change {
+  0% {
+    background-color: rgb(192, 186, 107);
+  }
+
+  25% {
+    background-color: #7cf1b7c5;
+  }
+
+  50% {
+    background-color: rgba(128, 190, 209, 0.836);
+  }
+}
