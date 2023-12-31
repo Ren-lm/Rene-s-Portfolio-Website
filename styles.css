@@ -510,7 +510,10 @@ hr {
 
 
 /* contact form styles */
-
+form{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
 .form-group {
   margin-bottom: 20px;
 }
@@ -531,7 +534,7 @@ hr {
 }
 
 .contactme{
-  margin-top: 350px;
+  margin-top: 100px;
 }
 
 .profile-photo {
@@ -544,20 +547,25 @@ hr {
   object-fit: cover;
 }
 
+
 .skills-list {
   list-style-type: none; /* Removes bullet points */
   padding: 0; /* Resets padding */
-  display: inline-block;
-  text-align: left; /* Aligns text to the left */
-  
+  display: flex; /* Enables flexbox */
+  flex-wrap: wrap; /* Allows items to wrap to the next line */
+  justify-content: center;
+  text-align: center; /* Aligns text to the left */
 }
 
 .skills-list li {
+  flex: 0 1 calc(100% / 5); /* Each item will take up 1/6th of the container width */
+  box-sizing: border-box; /* Ensures padding and border are included in the width calculation */
+  padding: 10px; /* Adjust as needed */
   color: #6a6a6a;
   background: white;
-  padding: 10px;
-  margin-bottom: 10px; /* Space between list items */
- width: 100%;;
+  margin: 10px;
+  /* margin-bottom: 10px;  */
+  width: 100%;;
   border-radius: 5px; /* Rounded corners */
   border: 2px solid #ff99cc; /* Example border: 2px solid with a light pink color */
 }
