@@ -141,7 +141,12 @@
       >
       <a class="footer-link" href="">E-mail</a>
       <a class="footer-link" href="https://medium.com/@rl.myrie2">Blog</a>
-      <p class="copyright">© 2023 René L M. All rights reserved.</p>
+      <p class="copyright">© <span id="current-year"></span> René L M. All rights reserved.</p>
     </div>
+    
+    <script>
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
+  
   </body>
 </html>

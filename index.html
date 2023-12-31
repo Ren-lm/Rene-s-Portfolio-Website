@@ -70,7 +70,7 @@
 
 
 
-<section style="background-color: #fbd9d942;" class="articles" id="article">
+<section style="background-color: rgba(255, 255, 255, 0);" class="articles" id="article">
   <div class="row">
 
 
@@ -134,17 +134,13 @@
       <a class="footer-link" href="https://www.linkedin.com/in/renelisam/">LinkedIn</a>
       <a class="footer-link" href="">E-mail</a>
       <a class="footer-link" href="https://medium.com/@rl.myrie2">Blog</a>
-      <p class="copyright">© 2023 René L M. All rights reserved.</p>
+      <p class="copyright">© <span id="current-year"></span> René L M. All rights reserved.</p>
     </div>
-
   </div>
 
-
-
-
-   
-
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+ </script>
 
 </body>
-
 </html>
