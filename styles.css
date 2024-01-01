@@ -92,6 +92,7 @@ a responsive design */
     text-align: center;
   }
   
+ 
   .nav .nav-links a {
     display: inline-block;
     padding: 13px 10px 13px 10px;
@@ -168,7 +169,7 @@ a responsive design */
   
   .nav a.active {
 
-  color: #fbaccc;
+  color:  #fbaccc;
   }
   .nav a.active:hover {
 
@@ -212,7 +213,7 @@ p{
 }
 
 a{
-    color:#fbaccc;
+    color:blueviolet;
     font-family: 'Montserrat', sans-serif;
     margin:10px 20px;
     text-decoration: none; 
