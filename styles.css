@@ -11,9 +11,11 @@ body {
 
 }
 
-
 .title1{
-    color: white;
+  color:white;
+}
+.subtitle{
+    color:rgb(54, 154, 225)
 }
 
 /* Navigation bar code */
@@ -29,7 +31,6 @@ a responsive design */
   .navlabel{
     font-size: 30px;
     font-family: "montserrat";
-    padding-left:20px;
     bottom: 12px;
     position:absolute;
     color: #fbaccc;
@@ -282,7 +283,6 @@ hr {
 }
 
 .intro{
-    width:30%;
     text-align: center;
 }
 
